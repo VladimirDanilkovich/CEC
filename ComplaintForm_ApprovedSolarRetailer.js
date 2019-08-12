@@ -30,7 +30,7 @@ describe('Approved Solar Retailer', function() {
     await driver.findElement(By.id("postCode")).sendKeys("123355677899")
     {
       const dropdown = await driver.findElement(By.id("mailingState"))
-      await dropdown.findElement(By.xpath("//option[. = 'NT']")).click()
+      await dropdown.findElement(By.css("*[value='NT']")).click()
     }
     await driver.findElement(By.id("companyName")).click()
     await driver.findElement(By.id("companyName")).sendKeys("Selenium")
@@ -39,7 +39,7 @@ describe('Approved Solar Retailer', function() {
     await driver.findElement(By.id("city")).sendKeys("mel")
     {
       const dropdown = await driver.findElement(By.id("state"))
-      await dropdown.findElement(By.xpath("//option[. = 'NT']")).click()
+      await dropdown.findElement(By.css("*[value='NT']")).click()
     }
     await driver.findElement(By.css(".input-group > #dateOfInstallation")).click()
     await driver.findElement(By.css("tr:nth-child(1) > .day:nth-child(2)")).click()
@@ -50,7 +50,7 @@ describe('Approved Solar Retailer', function() {
     await driver.findElement(By.id("contactedTheRetailerInvolved")).click()
     {
       const dropdown = await driver.findElement(By.id("contactedTheRetailerInvolved"))
-      await dropdown.findElement(By.xpath("//option[. = 'No']")).click()
+      await dropdown.findElement(By.css("*[value='No']")).click()
     }
     await driver.findElement(By.css(".btn")).click()
     await driver.wait(until.elementLocated(By.xpath("//h2[contains(.,\'Your complaint has been submitted successfully.\')]")), 15000)
