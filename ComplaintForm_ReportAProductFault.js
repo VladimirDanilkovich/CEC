@@ -18,7 +18,7 @@ describe('Report a product fault', function() {
     await driver.findElement(By.id("natureComplaint")).click()
     {
       const dropdown = await driver.findElement(By.id("natureComplaint"))
-      await dropdown.findElement(By.xpath("//option[. = 'Report a product fault']")).click()
+      await dropdown.findElement(By.css("*[value='Report a product fault']")).click()
     }
     await driver.findElement(By.css(".col-sm-12:nth-child(1) .checkbox-text")).click()
     await driver.findElement(By.id("firstName")).sendKeys("Selenium")
