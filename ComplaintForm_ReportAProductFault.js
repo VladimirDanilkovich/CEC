@@ -30,7 +30,7 @@ describe('Report a product fault', function() {
     await driver.findElement(By.id("postCode")).sendKeys("123355677899")
     {
       const dropdown = await driver.findElement(By.id("mailingState"))
-      await dropdown.findElement(By.xpath("//option[. = 'NT']")).click()
+      await dropdown.findElement(By.css("*[value='NT']")).click()
     }
     await driver.findElement(By.css(".input-group > #dateOfInstallation")).click()
     await driver.findElement(By.css("tr:nth-child(1) > .day:nth-child(2)")).click()
