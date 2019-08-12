@@ -2,7 +2,7 @@
 const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
-describe('CoC Application Form', function() {
+describe('Code of Conduct Application Form', function() {
   this.timeout(30000)
   let driver
   let vars
