@@ -17,7 +17,7 @@ describe('Accredited Installer', function() {
     await driver.get("https://verticdev-cleanenergycouncil.cs58.force.com/ComplaintForm")
     {
       const dropdown = await driver.findElement(By.id("natureComplaint"))
-      await dropdown.findElement(By.By.css("*[value='Make a complaint against an accredited installer']")).click()
+      await dropdown.findElement(By.css("*[value='Make a complaint against an accredited installer']")).click()
     }
     await driver.findElement(By.id("firstName")).click()
     await driver.findElement(By.id("firstName")).sendKeys("Selenium")
