@@ -38,7 +38,7 @@ describe('Inverter Application', function() {
     await driver.findElement(By.id("TradingName")).sendKeys("Selenium")
     {
       const dropdown = await driver.findElement(By.id("country"))
-      await dropdown.findElement(By.xpath("//option[. = 'Australia']")).click()
+      await dropdown.findElement(By.css("*[value='Australia']")).click()
     }
     await driver.findElement(By.id("ManufacturerDistributer")).sendKeys("2345677")
     await driver.findElement(By.id("CertificateNumbers")).sendKeys("1488694737382938757575")
