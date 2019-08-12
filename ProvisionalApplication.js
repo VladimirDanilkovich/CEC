@@ -22,7 +22,7 @@ describe('ProvisionalApplication', function() {
     await driver.findElement(By.id("gender")).click()
     {
       const dropdown = await driver.findElement(By.id("gender"))
-      await dropdown.findElement(By.xpath("//option[. = 'Male']")).click()
+      await dropdown.findElement(By.css("*[value='Male']")).click()
     }
     await driver.findElement(By.id("email")).click()
     await driver.findElement(By.id("email")).sendKeys("ddd@gmail.com")
