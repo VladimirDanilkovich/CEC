@@ -18,7 +18,7 @@ describe('Approved Solar Retailer', function() {
     await driver.findElement(By.id("natureComplaint")).click()
     {
       const dropdown = await driver.findElement(By.id("natureComplaint"))
-      await dropdown.findElement(By.xpath("//option[. = 'Make a complaint against an Approved Solar retailer']")).click()
+      await dropdown.findElement(By.css("*[value='Make a complaint against an Approved Solar retailer']")).click()
     }
     await driver.findElement(By.id("firstName")).click()
     await driver.findElement(By.id("firstName")).sendKeys("Selenium")
