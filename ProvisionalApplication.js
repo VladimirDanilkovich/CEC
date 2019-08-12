@@ -35,17 +35,17 @@ describe('ProvisionalApplication', function() {
     await driver.findElement(By.id("country")).click()
     {
       const dropdown = await driver.findElement(By.id("country"))
-      await dropdown.findElement(By.xpath("//option[. = 'Australia']")).click()
+      await dropdown.findElement(By.css("*[value='Australia']")).click()
     }
     await driver.findElement(By.id("accreditationType")).click()
     {
       const dropdown = await driver.findElement(By.id("accreditationType"))
-      await dropdown.findElement(By.xpath("//option[. = 'Grid-connect']")).click()
+      await dropdown.findElement(By.css("*[value='Grid-connect']")).click()
     }
     await driver.findElement(By.css(".ng-empty #accreditationType")).click()
     {
       const dropdown = await driver.findElement(By.css(".col-sm-6:nth-child(2) #accreditationType"))
-      await dropdown.findElement(By.xpath("//option[. = 'Design only']")).click()
+      await dropdown.findElement(By.css("*[value='Design only']")).click()
     }
     await driver.findElement(By.css(".checkboxes:nth-child(12) .checkbox-text")).click()
     await driver.findElement(By.css(".checkboxes:nth-child(13) .checkbox-text")).click()
