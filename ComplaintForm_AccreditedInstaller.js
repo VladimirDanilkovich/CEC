@@ -30,7 +30,7 @@ describe('Accredited Installer', function() {
     await driver.findElement(By.id("mailingState")).click()
     {
       const dropdown = await driver.findElement(By.id("mailingState"))
-      await dropdown.findElement(By.xpath("//option[. = 'NT']")).click()
+      await dropdown.findElement(By.css("*[value='NT']")).click()
     }
     await driver.findElement(By.id("installerName")).sendKeys("Selenium1")
     await driver.findElement(By.css(".col-sm-6:nth-child(2) #installerName")).sendKeys("Test1")
@@ -38,22 +38,22 @@ describe('Accredited Installer', function() {
     await driver.findElement(By.id("state")).click()
     {
       const dropdown = await driver.findElement(By.id("state"))
-      await dropdown.findElement(By.xpath("//option[. = 'QLD']")).click()
+      await dropdown.findElement(By.css("*[value='QLD']")).click()
     }
     await driver.findElement(By.id("systemType")).click()
     {
       const dropdown = await driver.findElement(By.id("systemType"))
-      await dropdown.findElement(By.xpath("//option[. = 'Stand-alone system']")).click()
+      await dropdown.findElement(By.css("*[value='Stand-alone system']")).click()
     }
     await driver.findElement(By.id("withBatteries")).click()
     {
       const dropdown = await driver.findElement(By.id("withBatteries"))
-      await dropdown.findElement(By.xpath("//option[. = 'No']")).click()
+      await dropdown.findElement(By.css("*[value='No']")).click()
     }
     await driver.findElement(By.id("mountingType")).click()
     {
       const dropdown = await driver.findElement(By.id("mountingType"))
-      await dropdown.findElement(By.xpath("//option[. = 'Tilt frame']")).click()
+      await dropdown.findElement(By.css("*[value='Tilt frame']")).click()
     }
     await driver.findElement(By.css(".input-group > #dateOfInstallation")).click()
     await driver.findElement(By.css("tr:nth-child(1) > .day:nth-child(3)")).click()
