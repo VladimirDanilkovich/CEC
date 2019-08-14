@@ -3,7 +3,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
 describe('Accredited Installer', function() {
-  this.timeout(30000)
+  this.timeout(50000)
   let driver
   let vars
   beforeEach(async function() {
@@ -62,6 +62,6 @@ describe('Accredited Installer', function() {
     await driver.findElement(By.css(".row:nth-child(13) #power")).sendKeys("fgf")
     await driver.findElement(By.id("Summary of main points")).sendKeys("jjgdds")
     await driver.findElement(By.css(".btn")).click()
-    await driver.wait(until.elementLocated(By.xpath("//h2[contains(.,\'Your dispute has been submitted successfully\')]")), 15000)
+    await driver.wait(until.elementLocated(By.xpath("//h2[contains(.,\'Your dispute has been submitted successfully\')]")), 20000)
   })
 })
