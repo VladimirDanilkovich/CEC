@@ -54,7 +54,7 @@
     "eyes.selenium": "0.0.72",
     "fs-plus": "2.9.1",
     "geckodriver": "1.1.2",
-    "merge": "1.2.0",
+    "merge": "1.2.1",
     "phantomjs-prebuilt": "2.1.12",
     "require-dir": "0.3.2",
     "selenium-webdriver": "^4.0.0-alpha.1"
